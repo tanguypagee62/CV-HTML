@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CV Tanguy Pagée</title>
+        <link rel="stylesheet" href="StyleSheetCV.css">
+        <meta rel="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1,0, viewport-fit=cover">
+    </head>
+
+<!--------------------------------- Block 1 ------------------------------------------>
+    <body>
+        <div class="block1">
+
+            <div class="block1-1" id="photo">
+                <img id="photo-profil" src="images/profil.jpg" alt="photo de Jacques Chirac">
+            </div>
+
+            <div class="block1-1" id="Presentation">
+                <h1><u>Tanguy Pagée</u></h1>
+                <h1><u>Etudiant en développement informatique</u><h1>
+            </div>
+
+            <div class="block1-1" id="Coordonnees">
+                <p><u> Me contacter : </u><br>
+                    Mail : t.pagee6262@icloud.com <br>
+                    Téléphone : 06 46 81 60 07 <br>
+                    Adresse : 12 Place Victor Hugo <br>
+                    Code postal : 29860, Plabennec <br>
+                </p>
+            </div>
+        </div>
+
+<!--------------------------------- Block 2 ------------------------------------------>
+        
+        <div class="block2">
+
+            <div class="block2-1" id="Experiences">
+                <u><h2 class="info1">Expérience professionelle</h2></u>
+                    <ul>
+                        <li> Cube 1 - Infrastructure réseau | CESI, Brest (29)</li>
+                        <li> Projet Base de données (MySQL) | CESI, Brest (29)</li>
+                        <li> Création d'un jeu vidéo (Python, HTML, CSS) | Lycée Mariette, Boulogne sur mer (62)</li>
+                        <li> Stage de 3ème dans un école primaire | Ecole Jean Ferrat, Ferques (62)</li>
+                    </ul>
+            </div>
+
+            <div class="block2-1" id="Diplomes">
+                <u><h2 class="info2"> Diplômes</h2></u>
+                    <ul style="list-style-type:square;">
+                        <li> Baccalauréat STL | Mention Assez Bien | Lycée Vauban, Brest (29)</li>
+                        <li> Brevet des collèges | Mention Bien | Collège Jean Rostand, Marquise (62)</li>
+                        <li> Certification PIX | Lycée Vauban, Brest (29)</li>
+                        <li> Certification CISCO, CCNA 1 (en cours) | CESI, Brest (29)</li>
+                        <li> Permis B | Plabennec (29)</li>
+                        <li> Brevet 50m nage libre | Piscine Capoolco, Marquise (62)</li>
+                    </ul>
+            </div>
+
+            <div class="block2-1" id="Centres d'intêret">
+                <u><h2 class="info3"> Centres d'intérêts</h2></u>
+                    <ul>
+                        <li> Informatique </li>
+                        <li> Sport </li>
+                        <li> Femmes </li>
+                    </ul>
+            </div>
+
+            <div class="block2-1" id="Etudes">
+                <u><h2 class="info4"> Etudes</h2></u>
+                    <ul style="list-style-type:square;">
+                        <li> CESI, Développement Informatique, Brest (29)</li>
+                        <li> Lycée Vauban, 1ère et terminale STL, Brest (29)</li>
+                        <li> Lycée Kérichen, 1ère Scientifique (réorientation), Brest (29)</li>
+                        <li> Lycée Mariette, 2nde Générale, Boulogne sur Mer (62)</li>
+                        <li> Collège Jean Rostand, 6ème, 5ème, 4ème, 3ème, Marquise (62)</li>
+                    </ul>
+            </div>
+
+        </div>
+
+<!--------------------------------- Block 3 ------------------------------------------>
+
+        <div class="block3">
+            <u><h2 class="info5"> Mes attributs</h2></u>
+                
+            <p></p>Désorganisé, minutieux et à l'écoute, bonne capacité d'adaptation sur le <br>
+            travail proposé dans l'optique de réussir au mieux le travail demandé. <br>
+            Bonne adaptation aux équipes porposé en général.
+                
+    </body>
+
+<!--------------------------------- Block 3 ------------------------------------------>
+
+    <script>
+
+        let countexperience = 0;
+        let countformation = 0;
+    
+            
+            function clicked(){
+                console.log("Aïe, on m'a claqué la gueule, j'ai un bleu sur le crâne maintenant !");
+            }
+            console.log("Hello beauté !");
+            
+            document.querySelector("#photo-profil").addEventListener('click', change);
+            
+            let newPhoto = "https://th.bing.com/th/id/OIP.UsY8MV8tmIyp1hwGrre9KAHaDP?w=322&h=153&c=7&r=0&o=5&dpr=1.25&pid=1.7";
+    
+            function change(){
+    
+                let oldPhoto;
+                oldPhoto = document.querySelector("#photo-profil").src;
+                console.log("Aïe, on m'a claqué la gueule, j'ai un bleu sur le crâne maintenant !");
+                document.querySelector("#photo-profil").src = newPhoto;
+                newPhoto = oldPhoto;
+                
+            }      
+    </script>
+</html>

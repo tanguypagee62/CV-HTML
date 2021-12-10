@@ -1,0 +1,74 @@
+/*------------------------- Corps -------------------------*/
+
+body {
+    font-family: sans-serif;
+    color: white;
+    background: url(images/irak.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*------------------------- Block 1 -------------------------*/
+
+.block1 {
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.block1-1{
+    width: 33%;
+}
+
+/*------------------------- Block 2 -------------------------*/
+
+.block2 {
+    display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: stretch;
+
+}
+.block2-1{
+    width: 50%;
+}
+
+/*------------------------- Block 3 -------------------------*/
+
+.block3{
+    text-align: center;
+}
+/*------------------------- Modification au détail (dans les blocs) -------------------------*/
+
+#Presentation {
+    text-align: center;
+}
+
+#Coordonnees {
+    text-align: right;
+}
+
+#photo-profil {
+    border-radius: 50px;
+    width: 250px;
+    height: 150px;
+}
+
+/*------------------------- Conditions -------------------------*/
+
+@media(max-width: 850px){
+    .block1 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px;
+    }
+
+    #Presentation {
+        font-size: 10px;
+        margin-left: 100px;
+    }
+}
